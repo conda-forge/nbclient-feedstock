@@ -1,13 +1,14 @@
-{% set version = "0.1.0" %}
+{% set name = "nbclient" %}
+{% set version = "0.2.0" %}
 {% set build = 0 %}
 
 package:
-  name: nbclient
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/n/nbclient/nbclient-{{ version }}.tar.gz
-  sha256: 39fa0b3b24cb597827f6b104718dc952c679a8f5ba2d6f1a4113a3bd7f1528c6
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 44dde0356def1d9345908c8f58dc604a434f2fe61c49ac13fac6e2da2ae429de
 
 build:
   number: {{ build }}
@@ -16,13 +17,15 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - traitlets >=4.2
-    - jupyter_client >=5.3.4
+    - jupyter_client >=6.1.0
     - nbformat >=5.0
+    - async_generator
+    - nest-asyncio
 
 test:
   imports:
