@@ -1,5 +1,5 @@
 {% set name = "nbclient" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 {% set build = 0 %}
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 44dde0356def1d9345908c8f58dc604a434f2fe61c49ac13fac6e2da2ae429de
+  sha256: e19f61896e0d2dae49e48ecc96ae60f6504e18aa25d165997953db867c45552c
 
 build:
   number: {{ build }}
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
