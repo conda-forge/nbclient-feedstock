@@ -5,7 +5,7 @@ Home: https://jupyter.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A client library for executing notebooks. Formally nbconvert's ExecutePreprocessor.
 
