@@ -1,6 +1,6 @@
 {% set name = "nbclient" %}
 {% set version = "0.4.1" %}
-{% set build = 0 %}
+{% set build = 1 %}
 
 package:
   name: {{ name }}
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - traitlets >=4.2
-    - jupyter_client >=6.1.0
+    - jupyter_client >=6.1.5
     - nbformat >=5.0
     - async_generator
     - nest-asyncio
