@@ -1,5 +1,5 @@
 {% set name = "nbclient" %}
-{% set version = "0.5.11" %}
+{% set version = "0.5.12" %}
 {% set build = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 751516992f34b58172bad54eef1e4bf7e4f4460d58e255ca1a4e5c9649476007
+  sha256: 0dd7ee6db59753563035f606421c3b558bd8c28b116d7e3ab8a0b4026cb44e38
 
 build:
   number: {{ build }}
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - traitlets >=4.2
+    - traitlets >=5.0.0
     - jupyter_client >=6.1.5
     - nbformat >=5.0
     - nest-asyncio
