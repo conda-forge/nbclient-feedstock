@@ -1,5 +1,5 @@
 {% set name = "nbclient" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 {% set build = 0 %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9565739f326a9148553b04efa387ccce84c4acd0e57d94daeea4b8efb50ea966
+  sha256: 0df76a7961d99a681b4796c74a1f2553b9f998851acc01896dce064ad19a9027
 
 build:
   number: {{ build }}
