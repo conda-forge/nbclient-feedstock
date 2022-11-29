@@ -26,7 +26,6 @@ requirements:
     - jupyter_client >=6.1.12
     - jupyter_core >=4.12,!=5.0
     - nbformat >=5.1
-    - nest-asyncio
 
 test:
   imports:
