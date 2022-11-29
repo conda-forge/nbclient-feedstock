@@ -19,11 +19,13 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - hatchling
   run:
     - python >=3.7
-    - traitlets >=5.2.2
-    - jupyter_client >=6.1.5
-    - nbformat >=5.0
+    - traitlets >=5.3
+    - jupyter_client >=6.1.12
+    - jupyter_core>=4.12,!=~5.0
+    - nbformat >=5.1
     - nest-asyncio
 
 test:
