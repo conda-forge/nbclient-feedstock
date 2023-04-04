@@ -1,11 +1,11 @@
-About nbclient
-==============
+About nbclient-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nbclient-feedstock/blob/main/LICENSE.txt)
 
 Home: https://jupyter.org
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nbclient-feedstock/blob/main/LICENSE.txt)
 
 Summary: A client library for executing notebooks. Formally nbconvert's ExecutePreprocessor.
 
