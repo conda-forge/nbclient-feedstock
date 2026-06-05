@@ -17,19 +17,24 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
-    - jupyter_client >=6.1.12
-    - jupyter_core >=4.12,!=5.0.*
-    - nbformat >=5.1
-    - traitlets >=5.4
+    - python >={{ python_min }}
+    - jupyter_client >=7.0.0
+    - jupyter_core >=5.4
+    - nbformat >=5.2.0
+    - traitlets >=5.13
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - nbclient
+  commands:
+    - pip check
 
 about:
   home: https://jupyter.org
