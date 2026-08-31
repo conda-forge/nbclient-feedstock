@@ -49,7 +49,6 @@ about:
     is to the jupyter protocol nbclient is to notebooks allowing for execution contexts to be run.
   dev_url: https://github.com/jupyter/nbclient
   doc_url: https://nbclient.readthedocs.io
-  doc_source_url: https://github.com/jupyter/nbclient/tree/master/docs
 
 extra:
   recipe-maintainers:
