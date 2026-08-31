@@ -3,7 +3,7 @@ schema_version: 1
 context:
   name: nbclient
   version: "0.11.0"
-  build: 0
+  build: 1
 
 package:
   name: ${{ name }}
