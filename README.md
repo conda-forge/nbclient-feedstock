@@ -3,7 +3,7 @@ About nbclient-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nbclient-feedstock/blob/main/LICENSE.txt)
 
-Home: https://jupyter.org
+Home: https://jupyter.org/
 
 Package license: BSD-3-Clause
 
@@ -11,12 +11,11 @@ Summary: A client library for executing notebooks. Formally nbconvert's ExecuteP
 
 Development: https://github.com/jupyter/nbclient
 
-Documentation: https://nbclient.readthedocs.io
+Documentation: https://nbclient.readthedocs.io/
 
 NBClient is a tool for parameterizing and executing Jupyter Notebooks.
 NBClient lets you execute notebooks. Similar in nature to jupyter_client, as the jupyter_client
 is to the jupyter protocol nbclient is to notebooks allowing for execution contexts to be run.
-
 
 Current build status
 ====================
@@ -49,31 +48,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `nbclient` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install nbclient
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install nbclient
 ```
 
-It is possible to list all of the versions of `nbclient` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add nbclient
+# for installing globally
+pixi global install nbclient
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `nbclient` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search nbclient --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search nbclient --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search nbclient --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -85,6 +126,8 @@ mamba repoquery whoneeds nbclient --channel conda-forge
 # List dependencies of `nbclient`:
 mamba repoquery depends nbclient --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -154,7 +197,4 @@ Feedstock Maintainers
 =====================
 
 * [@davidbrochart](https://github.com/davidbrochart/)
-
-
-<!-- dummy commit to enable rerendering -->
 
