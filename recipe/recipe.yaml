@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: nbclient
   version: "0.11.0"
-  python_min: "3.10"
   build: 0
 
 package:
